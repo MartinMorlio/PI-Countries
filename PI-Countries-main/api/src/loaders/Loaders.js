@@ -1,6 +1,6 @@
 const axios = require("axios");
 const { DB_URL } = process.env;
-const { Country } = require('../src/db');
+const { Country } = require('../db');
 
 const getCountriesToDb = async () => {
   const getCountries = await axios.get(DB_URL);
@@ -9,12 +9,12 @@ const getCountriesToDb = async () => {
     const modelCountries = allCountries.map((l) => {
         return {
             name: l.name,
-            id: l.alpha3Code,
+            id: l.alpha3Code || l.alpha2Code,
             img: l.flag,
             continent: l.region,
-            capital: l.capital,
+            capital: l.capital || "No se ha encontrado la capital de este país",
             subregion: l.subregion,
-            area: l.area,
+            area: l.area || 0,
             population: l.population
         };
     });
