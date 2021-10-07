@@ -1,0 +1,130 @@
+.navBarContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #333232;
+    color: white;
+    align-self: flex-start;
+    box-shadow: none;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .inputName {
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+  }
+  
+  .difficulty {
+    margin: 2em 2em 2em 2em;
+  }
+  .duration {
+    margin: 2em 2em 2em 2em;
+  }
+  .season {
+    margin: 2em 2em 2em 2em;
+  }
+  
+  .countries {
+    margin: 2em 2em 2em 2em;
+  }
+  
+  .countries1 {
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    border-radius: 5%;
+    box-shadow: none;
+  }
+  .link:hover {
+    border: 1px #000000 solid;
+    box-shadow: none;
+  }
+  
+  .inputName {
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    box-shadow: none;
+  }
+  
+  .btn {
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px black;
+  }
+  
+  .btn:hover {
+    color: #000000;
+    background-color: #3c9934;
+    transition: 0.5s;
+  }
+  
+  .btn1 {
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    margin: 1em 1em 1em 1em;
+    height: 25px;
+    width: 90px;
+    transition: all 0.2s;
+  }
+  .btn1:hover {
+    color: #000000;
+    background-color: #3c9934;
+  }
+  
+  
+  .name {
+    color: white;
+  }
+  
+  .butn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #838383;
+    margin: 1em 0.3em 0.3em 0;
+    border-radius: 1em;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: larger;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .butn:hover {
+    transform: scale(1.1);
+  }
+  
+  .countryCont {
+    border: none;
+    border-radius: 4%;
+    margin: 1em;
+    width: 16%;
+    border: solid 1px #fafafa70;
+    background-color: black;
+    margin-left: 162px;
+    opacity: 85%;
+    transition: all 0.2s;
+  }
+  
+  .countryCont:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+  }
+  .order {
+    display: flex;
+    flex-wrap: wrap;
+  }
