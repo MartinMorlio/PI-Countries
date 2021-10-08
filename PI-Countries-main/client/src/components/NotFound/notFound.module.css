@@ -1,0 +1,36 @@
+.img {
+    justify-content: center;
+    align-items: center;
+    background-size: auto;
+}
+
+.msg {
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 223px;
+    color: black;
+    background-size:cover;
+    background-image: url('D:\Ruiz\Desktop\HENRY\Alumno\5. Trabajo individual\3. Fecha 18 de agosto\PI-Countries\client\src\images\NotFound.jpg');
+}
+
+.button {
+    display: inline-block;
+    padding: 0.35em 1.4em;
+    border: 0.1em solid #838383;
+    margin: 4em 0.3em 0.3em 0;
+    border-radius: 1em;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: larger;
+    background-color: #333232;
+    color: rgb(255, 255, 255);
+    opacity: 90%;
+  }
+  .button:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+  }
