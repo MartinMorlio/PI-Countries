@@ -54,7 +54,7 @@ export function ordenPoblacion(){
 
 export function ordenPoblacionViceversa () {
     return {
-        type: 'ORDEN_POBLACIOB-VICEVERSA'
+        type: 'ORDEN_POBLACION_VICEVERSA'
     }
 }
 
