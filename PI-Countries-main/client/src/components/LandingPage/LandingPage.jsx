@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './landing.module.css';
 
-export function LandingPage () {
+export function LandingPage() {
     return (
         <div>
-            <h4 className={style.title}> BIENVENIDOS ➖ WELCOME </h4>
+            <h2 className={style.title}>BIENVENIDO - WELCOME - 欢迎 - BEM VINDO - いらっしゃいませ - BENVENUTO - BIENVENEU - ברוך הבא</h2>
             <Link to='/home'>
-                <button className={style.button}> <h3> 🛩PREPARADOS PARA VIAJAR🛩</h3> </button>
+                <button className={style.button}><h3>🛫 LISTO PARA DESPEGAR 🛫</h3></button>
             </Link>
         </div>
     )

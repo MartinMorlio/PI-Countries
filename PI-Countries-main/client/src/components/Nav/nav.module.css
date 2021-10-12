@@ -37,23 +37,26 @@
   }
   .sortContainer {
     display: flex;
+    margin-left: 200px;
+    align-items: flex-start;
   }
   
   .filtersContainer {
     display: flex;
-    margin-left: 3em;
-  }
+    justify-content: center;
+    margin-left: 100px;
+  } 
   
   .selectContainer {
     display: flex;
-    margin-left: 1.5em;
+    margin-left: 50px;
   }
   
   .inputActivityContainer {
     display: flex;
-    align-self: center;
-    margin-left: 3em;
-  }
+    justify-content: center;
+    margin-left: 100px;
+  } 
   .inputActivityContainer input {
     margin-left: 0.5em;
     outline: none;

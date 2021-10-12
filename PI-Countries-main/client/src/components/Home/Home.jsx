@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import Nav from '../Nav/Nav';
-import Countries from '../Countries/Countries';
+import Countries from '../Countries/Countries'
 
-export function Home () {
+export function Home() {
     return (
         <div>
             <Nav />
@@ -10,7 +10,7 @@ export function Home () {
                 <Countries />
             </div>
         </div>
-    )
+    );
 }
 
 export default Home;

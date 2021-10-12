@@ -1,4 +1,4 @@
-import { ordAZ, ordPop } from '../components/Orders/orders';
+import { ordAZ, ordPop } from '../components/Orders/orders'
 
 const initialState = {
     countries: [],
@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const rootReducer = (state = initialState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'GET_COUNTRIES':
             return {
                 ...state,
@@ -21,6 +21,11 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 countries: action.payload
+            }
+        case 'ORDER_AZ':
+            return {
+                ...state,
+                countries: state.countries.slice().sort(ordAZ)
             }
         case 'ORDER_ZA':
             return {
@@ -40,25 +45,17 @@ const rootReducer = (state = initialState, action) => {
         case 'ORDER_CONTINENT':
             return {
                 ...state,
-                countries: state.countries.filter((e) => e.continent === action.payload)
-             }
+                countries: state.countries.filter((el) => el.continent === action.payload)
+            }
         case 'SHOW_ACTIVITY':
             return {
                 ...state,
-                countries: state.countries.filter((e) => {
-                    return e.activities.some((e) =>{ 
-                        e.name === action.payload
-                    })
+                countries: state.countries.filter((el) => {
+                    return el.activities.some((el) => el.name === action.payload) 
                 })
             }
         default:
             return state;
-
     }
 }
-
 export default rootReducer;
-
-
-
-

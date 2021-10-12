@@ -1,89 +1,79 @@
 import axios from 'axios';
 
-export function obtenerPaises () {
+export function getCountries() {
     return async (dispatch) => {
-        const res = await axios.get(`http://localhost:3001/countries`);
+        const response = await axios.get(`http://localhost:3001/countries`);
         return dispatch({
             type: 'GET_COUNTRIES',
-            payload: res.data
+            payload: response.data
         })
     }
 }
 
-export function obtenerDetalles(id){
+export function getDetail(id) {
     return async (dispatch) => {
-        const res = await axios.get(`http://localhost:3001/countries/${id}`);
+        const response = await axios.get(`http://localhost:3001/countries/${id}`);
         return dispatch({
             type: 'GET_DETAIL',
-            payload: res.data
+            payload: response.data
         })
     }
 }
 
-export function obtenerName(name){
+export function getName(name) {
     return async (dispatch) => {
         try {
-            const res = await axios.get(`http://localhost:3001/countries?name=${name}`);
+            const response = await axios.get(`http://localhost:3001/countries?name=${name}`);
             return dispatch({
                 type: 'GET_NAME',
-                payload: res.data
+                payload: response.data
             })
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+            console.log(error);
         };
     }
 }
 
-export function ordenAZ () {
-    return {
-        type: 'ORDEN_AZ'
-    }
+export function orderAZ() {
+    return { type: 'ORDER_AZ' };
 }
 
-export function ordenZA (){
-    return {
-        type: 'ORDEN_ZA'
-    }
+export function orderZA() {
+    return { type: 'ORDER_ZA' }
 }
 
-export function ordenPoblacion(){
-    return {
-        type: 'ORDEN_POBLACION'
-    }
+export function orderPop() {
+    return { type: 'ORDER_POP' }
 }
 
-export function ordenPoblacionViceversa () {
-    return {
-        type: 'ORDEN_POBLACION_VICEVERSA'
-    }
-}
+export function orderPopReverse() {
+    return { type: 'ORDER_POP_REVERSE' }
+};
 
-export function ordenContinente(payload){
-    return { 
-        type: 'ORDEN_CONTINENTE',
+export function orderContinent(payload) {
+    return {
+        type: 'ORDER_CONTINENT',
         payload
-    }
+    };
+};
+
+export function showActivity(payload) {
+    return {
+        type: 'SHOW_ACTIVITY',
+        payload
+    };
 }
 
-export function mostrarActividad(payload){ 
-        return {
-            type: 'SHOW_ACTIVITY',
-            payload
-        };
-    }
-
-export function crearActividad(actividad){
-    return async function(){
+export function createActivity(activity) {
+    return async function () {
         try {
-            const nuevaActividad = await axios.post('http://localhost:3001/activity/', actividad)
-            console.log('Aguarde, se está creando la actividad: ', nuevaActividad);
-        } catch (err) {
-            console.log('Hubo un error, este es: ', err)
+            const newActivity = await axios.post('http://localhost:3001/activity/', activity)
+            console.log('Creando la activity: ', newActivity)
+        } catch (error) {
+            console.log(error);
         }
     }
 }
-
-
 
 
 
