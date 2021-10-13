@@ -10,8 +10,8 @@
     border-radius: 4%;
     margin: 1em;
     width: 16%;
-    border: solid 1px #fafafa70;
-    background-color: black;
+    border: solid 5px #fafafa70;
+    background-color: coral;
     margin-left: 125px;
     opacity: 85%;
     transition: all 0.2s;

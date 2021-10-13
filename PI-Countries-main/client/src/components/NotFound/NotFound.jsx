@@ -5,10 +5,9 @@ export function NotFound() {
     return (
         <div>
             <div className={style.msg}>
-                <h1>TE PERDISTE, WILSON! 😱</h1>
-                <h3>Estás en el famoso error '404 not found' 😓</h3>
+                <h1> NO ES MALO PERDERSE EN UN LUGAR ASÍ, PERO DEBES VOLVER 🥴</h1>
                 <Link to='/home'>
-                    <button className={style.button}>Volver a la civilización ◀</button>
+                    <button className={style.button}>Volver al inicio ♻</button>
                 </Link>
             </div>
         </div>

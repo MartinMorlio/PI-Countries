@@ -92,10 +92,10 @@ const NavBar = ({
                     }>
 
                         <option value="all">Todos</option>
-                        <option value="Americas">Americas</option>
-                        <option value="Europe">Europe</option>
-                        <option value="Africa">Africa</option>
-                        <option value="Oceania">Oceania</option>
+                        <option value="Americas">América</option>
+                        <option value="Europe">Europa</option>
+                        <option value="Africa">África</option>
+                        <option value="Oceania">Oceanía</option>
                         <option value="Asia">Asia</option>
                     </select>
                 </div>
@@ -141,9 +141,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
-
-
-
-
-
-

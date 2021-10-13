@@ -92,9 +92,9 @@ const ActivityForm = () => {
     if (form) {
       dispatch(createActivity(dataForm))
         .then(() => stateReset())
-        .then(() => alert("Actividad agregada 😎"));
+        .then(() => alert("Actividad agregada rey 👑😎"));
     } else {
-      return alert("Campos incompletos! Por favor, completar todos 😊");
+      return alert("Che capo, datos incompletos! Completa todos amigo 😊");
     }
   };
 
@@ -166,6 +166,7 @@ const ActivityForm = () => {
               <option value={22}>22</option>
               <option value={23}>23</option>
               <option value={24}>24</option>
+              <option value={+24}>+24</option>
             </select>
           </div>
 
@@ -178,10 +179,10 @@ const ActivityForm = () => {
               onChange={setDataHandler}
             >
               <option value={''}></option>
-              <option value="Autumn">Autumn</option>
-              <option value="Winter">Winter</option>
-              <option value="Spring">Spring</option>
-              <option value="Summer">Summer</option>
+              <option value="Autumn">Otoño</option>
+              <option value="Winter">Invierno</option>
+              <option value="Spring">Primavera</option>
+              <option value="Summer">Verano</option>
             </select>
           </div>
 

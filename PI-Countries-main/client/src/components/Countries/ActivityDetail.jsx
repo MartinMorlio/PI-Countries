@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './activityDetail.module.css'
 
+//mostraría las actividades en las cards.
+//si no tiene actividades, puede crearlas desde ahí
+
 const Activity = ({ activities }) => {
     if (activities && activities.length > 0) {
         return (

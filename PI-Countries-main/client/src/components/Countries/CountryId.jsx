@@ -33,4 +33,4 @@ const CountryId = () => {
         </div>
     );
 };
-export default CountryId;
+export default CountryId

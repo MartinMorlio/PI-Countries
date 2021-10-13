@@ -51,7 +51,7 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 countries: state.countries.filter((el) => {
-                    return el.activities.some((el) => el.name === action.payload) 
+                    return el.activities.some((el) => el.name === action.payload)
                 })
             }
         default:
