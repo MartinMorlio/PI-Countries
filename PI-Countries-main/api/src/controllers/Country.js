@@ -20,7 +20,7 @@ const getCountries = async (req, res) => {
                 }
             });
             if (!countryQuery[0]) {
-                console.log('Error! 😪 No hay país.');
+                console.log('Error! No se encuentra dicho país.');
                 return res.status(404).json({error: `No se encuentra ningún país con el nombre ${name}`})
             }
             return res.send(countryQuery);

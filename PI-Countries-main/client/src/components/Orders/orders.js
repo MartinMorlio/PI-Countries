@@ -5,5 +5,5 @@ export const ordAZ = (a, b) => {
 }
 
 export const ordPop = (a, b) => {
-    return a.population - b.population
+    return a.area - b.area
 }
